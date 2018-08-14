@@ -19,9 +19,9 @@ register_client_hints();
     <section id="content">
       <h2>Places We Work</h2>
       <ul class="collapsibleList">
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Adams County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Adams County, WI</b></div>
+          <div class="collapsible-content">
             Adams<br>
             Friendship<br>
             Arkdale<br>
@@ -31,9 +31,9 @@ register_client_hints();
             Wisconsin Dells
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Columbia County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Columbia County, WI</b></div>
+          <div class="collapsible-content">
             Portage<br>
             Lodi<br>
             Poynette<br>
@@ -44,9 +44,9 @@ register_client_hints();
             Cambria
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Marquette County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Marquette County, WI</b></div>
+          <div class="collapsible-content">
             Westfield<br>
             Endeavor<br>
             Briggsville<br>
@@ -57,9 +57,9 @@ register_client_hints();
             Harrisville
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Portage County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Portage County, WI</b></div>
+          <div class="collapsible-content">
             Amherst<br>
             Almond<br>
             Bancroft<br>
@@ -67,9 +67,9 @@ register_client_hints();
             Stevens Point
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Waushara County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Waushara County, WI</b></div>
+          <div class="collapsible-content">
             West Bloomfield<br>
             Pine River<br>
             Poy Sippi<br>
@@ -83,9 +83,9 @@ register_client_hints();
             Richford
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Waupaca County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Waupaca County, WI</b></div>
+          <div class="collapsible-content">
             Waupaca<br>
             Weyauwega<br>
             Freemont<br>
@@ -100,18 +100,18 @@ register_client_hints();
             Embarrass
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Juneau County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Juneau County, WI</b></div>
+          <div class="collapsible-content">
             Lyndon Station<br>
             Mauston<br>
             New Lisbon<br>
             Necedah
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Green Lake County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Green Lake County, WI</b></div>
+          <div class="collapsible-content">
             Berlin<br>
             Green Lake<br>
             Marquette<br>
@@ -121,9 +121,9 @@ register_client_hints();
             Princeton
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Winnebago County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Winnebago County, WI</b></div>
+          <div class="collapsible-content">
             Picket<br>
             Rush Lake<br>
             Oshkosh<br>
@@ -137,12 +137,12 @@ register_client_hints();
             Neenah
           </div>
         </li>
-        <li class="collapsibleItem">
+        <li class="collapsible-item">
           <b>Calumet County, WI</b>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Manitowoc County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Manitowoc County, WI</b></div>
+          <div class="collapsible-content">
             Cleveland<br>
             Valders<br>
             Manitowac<br>
@@ -163,9 +163,9 @@ register_client_hints();
             Batavia
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Fond du Lac County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Fond du Lac County, WI</b></div>
+          <div class="collapsible-content">
             Campbellsport<br>
             Mount Calvary<br>
             Fond du Lac<br>
@@ -175,9 +175,9 @@ register_client_hints();
             Oakfield
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Dodge County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Dodge County, WI</b></div>
+          <div class="collapsible-content">
             Fox Lake<br>
             Ronadolph<br>
             Lomira<br>
@@ -194,9 +194,9 @@ register_client_hints();
             Lowell
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Jefferson County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Jefferson County, WI</b></div>
+          <div class="collapsible-content">
             Watertown<br>
             Waterloo<br>
             Lake Mills<br>
@@ -207,9 +207,9 @@ register_client_hints();
             Sullivan
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Dane County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Dane County, WI</b></div>
+          <div class="collapsible-content">
             Sauk City<br>
             Dane<br>
             Waunakee<br>
@@ -222,18 +222,18 @@ register_client_hints();
             Cambridge
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Sauk County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Sauk County, WI</b></div>
+          <div class="collapsible-content">
             Prairie du Sac<br>
             Merrimac<br>
             Baraboo<br>
             Lake Delton
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Outagamie County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Outagamie County, WI</b></div>
+          <div class="collapsible-content">
             Hortonville<br>
             Greenville<br>
             Shiocton<br>
@@ -242,9 +242,9 @@ register_client_hints();
             Bear Creek
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Washington County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Washington County, WI</b></div>
+          <div class="collapsible-content">
             Hartford<br>
             Slinger<br>
             Allenton<br>
@@ -252,9 +252,9 @@ register_client_hints();
             Kewaskum
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Brown County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Brown County, WI</b></div>
+          <div class="collapsible-content">
             Onieda<br>
             Green Bay<br>
             Wrightstown<br>
@@ -263,9 +263,9 @@ register_client_hints();
             Bellevue
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Wood County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Wood County, WI</b></div>
+          <div class="collapsible-content">
             Nekoosa<br>
             Wisconsin Rapids<br>
             Babcock<br>
@@ -278,9 +278,9 @@ register_client_hints();
             Marshfield
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Marathon County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Marathon County, WI</b></div>
+          <div class="collapsible-content">
             Elderon<br>
             Galloway<br>
             Mosinee<br>
@@ -292,9 +292,9 @@ register_client_hints();
             Knowlton
           </div>
         </li>
-        <li class="collapsibleItem">
-          <div class="collapsibleTarget"><b>Shawano County, WI</b></div>
-          <div class="collapsibleContent">
+        <li class="collapsible-item">
+          <div class="collapsible-target"><b>Shawano County, WI</b></div>
+          <div class="collapsible-content">
             Caroline<br>
             Tigerton<br>
             Wittenberg<br>
@@ -310,7 +310,7 @@ register_client_hints();
       </ul>
     </section>
     <?php require_once("includes/footer.php"); ?>
-    <script src="js/jquery.min.js"></script>
-    <script>$(function(){$(".collapsibleTarget").click(function(){$(this).hasClass("on")?$(this).removeClass("on").next(".collapsibleContent").removeClass("on"):($(".collapsibleTarget, .collapsibleContent").removeClass("on"),$(this).addClass("on").next(".collapsibleContent").addClass("on"))})});</script>
+    <script src="/js/jquery.min.js"></script>
+    <script>$(function(){$(".collapsible-target").click(function(){$(this).hasClass("on")?$(this).removeClass("on").next(".collapsible-content").removeClass("on"):($(".collapsible-target, .collapsible-content").removeClass("on"),$(this).addClass("on").next(".collapsible-content").addClass("on"))})});</script>
   </body>
 </html>

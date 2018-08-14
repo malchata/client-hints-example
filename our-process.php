@@ -21,13 +21,14 @@ register_client_hints();
       <section id="carousel">
         <div class="m-scooch m-fluid m-scooch-photos">
           <div class="m-scooch-inner">
-            <div class="m-item m-active"><img src="img/slider/01-1x.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="img/slider/02-1x.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="img/slider/03-1x.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="img/slider/04-1x.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="img/slider/05-1x.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="img/slider/06-1x.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="img/slider/07-1x.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-01.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-02.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-03.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-04.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-05.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-06.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-07.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-08.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
           </div>
         </div>
         <div class="controls">
@@ -91,8 +92,8 @@ register_client_hints();
       </p>
     </section>
     <?php require_once("includes/footer.php"); ?>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/scooch.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/scooch.min.js"></script>
     <script>
       $(function(){
         $(".m-scooch").scooch();

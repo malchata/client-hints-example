@@ -5,7 +5,7 @@ RewriteBase /
 <IfModule rewrite_module>
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^image/dpr:(.*)/sizes:(.*)/(.*)\.(.*) image.php?dpr=$1&sizes=$2&src=$3&format=$4 [NC]
+  RewriteRule ^image/sizes:(.*)/(.*)\.(.*) image.php?sizes=$1&src=$2&format=$3 [NC]
   RewriteRule ^image/dpr:(.*)/(.*)\.(.*) image.php?dpr=$1&src=$2&format=$3 [NC]
   RewriteRule ^image/(.*)\.(.*) image.php?src=$1&format=$2 [NC]
   RewriteRule ^([^\.]+)$ $1.php [NC,L]
@@ -26,7 +26,7 @@ RewriteBase /
   <FilesMatch "image.php">
     FileETag None
     Header unset ETag
-    Header set Vary "DPR, Content-DPR, Viewport-Width, Width, Accept-Encoding, Save-Data"
+    Header set Vary "DPR, Width, Accept-Encoding, Save-Data"
     Header set Cache-Control "public,max-age=31557600"
   </FilesMatch>
   <FilesMatch "sw\.js$">

@@ -19,7 +19,7 @@ register_client_hints();
     <section id="content">
       <p class="intro-copy"><b>We encourage you to call or contact</b> our team of experienced and friendly foresters for more information.</p>
       <aside class="float-right">
-        <img class="side-image" src="img/contact-img.jpg" alt="All questions are welcome.">
+        <img class="side-image" src="/image/dpr:true/contact-img.jpg" alt="All questions are welcome.">
         <p class="imageCaption">All questions are welcome.</p>
       </aside>
       <p class="intro-copy">
@@ -42,7 +42,7 @@ register_client_hints();
         <h3 class="contact-cta">Feel free to contact any of Sconnie Timber's People.</h3>
         <ul class="contacts">
           <li class="contact">
-            <img class="photo" sizes="(min-width: 300px) 96px, 30.7135416667vw" src="/image/dpr:true/steve1.jpg" alt="Steven Seagal">
+            <img class="photo" src="/image/dpr:true/steve1.jpg" alt="Steven Seagal">
             <p class="details">
               <b>Steven Seagal</b><br>
               President and Founder<br>
@@ -51,7 +51,7 @@ register_client_hints();
             </p>
           </li>
           <li class="contact">
-            <img class="photo" sizes="(min-width: 300px) 96px, 30.7135416667vw" src="/image/dpr:true/steve2.jpg" alt="Steven Seagal">
+            <img class="photo" src="/image/dpr:true/steve2.jpg" alt="Steven Seagal">
             <p class="details">
               <b>Steven Seagal</b><br>
               CTO<br>
@@ -60,7 +60,7 @@ register_client_hints();
             </p>
           </li>
           <li class="contact">
-            <img class="photo" sizes="(min-width: 300px) 96px, 30.7135416667vw" src="/image/dpr:true/steve3.jpg" alt="Steven Seagal">
+            <img class="photo" src="/image/dpr:true/steve3.jpg" alt="Steven Seagal">
             <p class="details">
               <b>Steven Seagal</b><br>
               COO<br>
@@ -69,7 +69,7 @@ register_client_hints();
             </p>
           </li>
           <li class="contact">
-            <img class="photo" sizes="(min-width: 300px) 96px, 30.7135416667vw" src="/image/dpr:true/steve4.jpg" alt="Steven Seagal">
+            <img class="photo" src="/image/dpr:true/steve4.jpg" alt="Steven Seagal">
             <p class="details">
               <b>Steven Seagal</b><br>
               Controller<br>
@@ -78,7 +78,7 @@ register_client_hints();
             </p>
           </li>
           <li class="contact">
-            <img class="photo" sizes="(min-width: 300px) 96px, 30.7135416667vw" src="/image/dpr:true/steve5.jpg" alt="Steven Seagal">
+            <img class="photo" src="/image/dpr:true/steve5.jpg" alt="Steven Seagal">
             <p class="details">
               <b>Steven Seagal</b><br>
               Head of Operations<br>
@@ -87,7 +87,7 @@ register_client_hints();
             </p>
           </li>
           <li class="contact">
-            <img class="photo" sizes="(min-width: 300px) 96px, 30.7135416667vw" src="/image/dpr:true/steve6.jpg" alt="Steven Seagal">
+            <img class="photo" src="/image/dpr:true/steve6.jpg" alt="Steven Seagal">
             <p class="details">
               <b>Steven Seagal</b><br>
               Groundskeeper<br>

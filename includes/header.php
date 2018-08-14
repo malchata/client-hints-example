@@ -12,7 +12,7 @@
 </header>
 <a href="/"><img id="main-logo" src="/image/logo.svg" alt="Sconnie Timber, Inc."></a>
 <nav>
-  <a class="nav-item" href="/our-work">Our Work</a>
-  <a class="nav-item" href="/our-process">Our Process</a>
-  <a class="nav-item" href="/contact-us">Contact Us</a>
+  <a class="nav-item<?php if (stristr($_SERVER["PHP_SELF"], "/our-process") !== false) { echo " on"; } ?>" href="/our-process">Our Process</a>
+  <a class="nav-item<?php if (stristr($_SERVER["PHP_SELF"], "/locations") !== false) { echo " on"; } ?>" href="/locations">Locations</a>
+  <a class="nav-item<?php if (stristr($_SERVER["PHP_SELF"], "/contact-us") !== false) { echo " on"; } ?>" href="/contact-us">Contact Us</a>
 </nav>

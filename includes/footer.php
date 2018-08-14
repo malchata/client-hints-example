@@ -1,6 +1,5 @@
 <p id="address">
-  County Road MM | PO Box 243 | Beertown, Wisconsin 54980 | <a href="tel:+1-555-555-5555">(920) 787-2506</a><br>
-  <u><a href="/locations">Places we work</a></u>.
+  County Road MM | PO Box 243 | Beertown, Wisconsin 54980 | <a href="tel:+1-555-555-5555">(555) 555-5555</a>
 </p>
 <footer>
   <div class="footer-container">

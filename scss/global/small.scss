@@ -148,6 +148,7 @@ nav {
 .side-image {
   display: block;
   margin: 0 auto .625rem;
+  max-width: 14.875rem;
 }
 
 .imageCaption {
@@ -296,6 +297,12 @@ nav {
   background-size: cover;
   background-position: 50% 50%;
   padding: 1.625rem 1.375rem .625rem;
+}
+
+.slow-network {
+  .copy-container {
+    background-image: linear-gradient(to bottom, $brown1 0, $brown3 100%);
+  }
 }
 
 .company-photo {
@@ -484,7 +491,8 @@ footer {
   text-align: center;
 }
 
-.no-js {
+.no-js,
+.slow-network {
   #carousel .next,
   #carousel .prev {
     display: none;

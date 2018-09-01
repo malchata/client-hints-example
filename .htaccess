@@ -26,7 +26,7 @@ RewriteBase /
   <FilesMatch "image.php">
     FileETag None
     Header unset ETag
-    Header set Vary "DPR, Width, Accept-Encoding, Save-Data"
+    Header set Vary "Accept-Encoding, Accept, DPR, Width, Save-Data, Viewport-Width"
     Header set Cache-Control "public,max-age=31557600"
   </FilesMatch>
   <FilesMatch "sw\.js$">

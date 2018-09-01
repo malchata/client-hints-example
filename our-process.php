@@ -1,6 +1,7 @@
 <?php
 require_once("includes/functions.php");
 register_client_hints();
+$network_quality = network_quality();
 ?>
 <!DOCTYPE html>
 <html class="no-js">
@@ -9,33 +10,45 @@ register_client_hints();
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300,900" type="text/css">
+    <?php
+    if ($network_quality > 0.5) {
+      ?>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300,900" type="text/css">
+      <?php
+    }
+    ?>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script>document.documentElement.classList.remove("no-js")</script>
   </head>
-  <body>
+  <body<?php if ($network_quality < 0.5) { ?> class="slow-network"<?php } ?>>
     <?php require_once("includes/header.php"); ?>
     <section id="content">
       <p class="intro-copy"><b>Our management team believes</b> we can benefit central Wisconsin's landowners best by providing additional services that compliment commercial logging operations. As industry leaders, we strive to continue to provide excellent service by employing two accredited foresters that can assist landowners with a variety of management objectives.  See our Q&amp;A section below to better understand the process and some of the details associated with working with us.</p>
-      <section id="carousel">
-        <div class="m-scooch m-fluid m-scooch-photos">
-          <div class="m-scooch-inner">
-            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-01.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-02.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-03.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-04.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-05.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-06.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-07.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
-            <div class="m-item m-active"><img src="/image/sizes:256,512,768,1024,1280/slider-08.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+      <?php
+      if ($network_quality > 0.5) {
+        ?>
+        <section id="carousel">
+          <div class="m-scooch m-fluid m-scooch-photos">
+            <div class="m-scooch-inner">
+              <div class="m-item m-active"><img src="/image/sizes:true/slider-01.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+              <div class="m-item m-active"><img src="/image/sizes:true/slider-02.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+              <div class="m-item m-active"><img src="/image/sizes:true/slider-03.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+              <div class="m-item m-active"><img src="/image/sizes:true/slider-04.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+              <div class="m-item m-active"><img src="/image/sizes:true/slider-05.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+              <div class="m-item m-active"><img src="/image/sizes:true/slider-06.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+              <div class="m-item m-active"><img src="/image/sizes:true/slider-07.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+              <div class="m-item m-active"><img src="/image/sizes:true/slider-08.jpg" sizes="(min-width: 620px) 600px, 94.7916666667vw"></div>
+            </div>
           </div>
-        </div>
-        <div class="controls">
-          <a href="javascript:void(0);" class="prev"></a>
-          <a href="javascript:void(0);" class="next"></a>
-        </div>
-      </section>
+          <div class="controls">
+            <a href="javascript:void(0);" class="prev"></a>
+            <a href="javascript:void(0);" class="next"></a>
+          </div>
+        </section>
+        <?php
+      }
+      ?>
       <h2>Q&amp;A</h2>
       <ul class="collapsible-list">
         <li class="collapsible-item">
@@ -92,21 +105,27 @@ register_client_hints();
       </p>
     </section>
     <?php require_once("includes/footer.php"); ?>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/scooch.min.js"></script>
-    <script>
-      $(function(){
-        $(".m-scooch").scooch();
+    <?php
+    if ($network_quality > 0.5) {
+      ?>
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/scooch.min.js"></script>
+      <script>
+        $(function(){
+          $(".m-scooch").scooch();
 
-        $(".next").click(function(){
-          $(".m-scooch").scooch("next");
-        });
+          $(".next").click(function(){
+            $(".m-scooch").scooch("next");
+          });
 
-        $(".prev").click(function(){
-          $(".m-scooch").scooch("prev");
+          $(".prev").click(function(){
+            $(".m-scooch").scooch("prev");
+          });
         });
-      });
-    </script>
-    <script>$(function(){$(".collapsible-target").click(function(){$(this).hasClass("on")?$(this).removeClass("on").next(".collapsible-content").removeClass("on"):($(".collapsible-target, .collapsible-content").removeClass("on"),$(this).addClass("on").next(".collapsible-content").addClass("on"))})});</script>
+      </script>
+      <script>$(function(){$(".collapsible-target").click(function(){$(this).hasClass("on")?$(this).removeClass("on").next(".collapsible-content").removeClass("on"):($(".collapsible-target, .collapsible-content").removeClass("on"),$(this).addClass("on").next(".collapsible-content").addClass("on"))})});</script>
+      <?php
+    }
+    ?>
   </body>
 </html>

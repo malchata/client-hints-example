@@ -1,6 +1,7 @@
 <?php
 require_once("includes/functions.php");
 register_client_hints();
+$network_quality = network_quality();
 ?>
 <!DOCTYPE html>
 <html class="no-js">
@@ -9,12 +10,18 @@ register_client_hints();
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300,900" type="text/css">
+    <?php
+    if ($network_quality > 0.5) {
+      ?>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300,900" type="text/css">
+      <?php
+    }
+    ?>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script>document.documentElement.classList.remove("no-js")</script>
   </head>
-  <body>
+  <body<?php if ($network_quality < 0.5) { ?> class="slow-network"<?php } ?>>
     <?php require_once("includes/header.php"); ?>
     <section id="content">
       <h2>Places We Work</h2>
@@ -310,7 +317,13 @@ register_client_hints();
       </ul>
     </section>
     <?php require_once("includes/footer.php"); ?>
-    <script src="/js/jquery.min.js"></script>
-    <script>$(function(){$(".collapsible-target").click(function(){$(this).hasClass("on")?$(this).removeClass("on").next(".collapsible-content").removeClass("on"):($(".collapsible-target, .collapsible-content").removeClass("on"),$(this).addClass("on").next(".collapsible-content").addClass("on"))})});</script>
+    <?php
+    if ($network_quality > 0.5) {
+      ?>
+      <script src="/js/jquery.min.js"></script>
+      <script>$(function(){$(".collapsible-target").click(function(){$(this).hasClass("on")?$(this).removeClass("on").next(".collapsible-content").removeClass("on"):($(".collapsible-target, .collapsible-content").removeClass("on"),$(this).addClass("on").next(".collapsible-content").addClass("on"))})});</script>
+      <?php
+    }
+    ?>
   </body>
 </html>

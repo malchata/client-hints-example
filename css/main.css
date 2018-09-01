@@ -590,6 +590,7 @@ nav {
 .side-image {
   display: block;
   margin: 0 auto 0.625rem;
+  max-width: 14.875rem;
 }
 
 .imageCaption {
@@ -724,6 +725,10 @@ nav {
   background-size: cover;
   background-position: 50% 50%;
   padding: 1.625rem 1.375rem 0.625rem;
+}
+
+.slow-network .copy-container {
+  background-image: linear-gradient(to bottom, #998356 0, #573607 100%);
 }
 
 .company-photo {
@@ -898,22 +903,28 @@ footer {
 }
 
 .no-js #carousel .next,
-.no-js #carousel .prev {
+.no-js #carousel .prev,
+.slow-network #carousel .next,
+.slow-network #carousel .prev {
   display: none;
 }
-.no-js .collapsible-target {
+.no-js .collapsible-target,
+.slow-network .collapsible-target {
   padding-left: 0;
   cursor: none;
 }
-.no-js .collapsible-target:before {
+.no-js .collapsible-target:before,
+.slow-network .collapsible-target:before {
   content: none;
 }
-.no-js .collapsible-content {
+.no-js .collapsible-content,
+.slow-network .collapsible-content {
   max-height: none;
   overflow-y: auto;
   padding-left: 0;
 }
-.no-js .collapsible-item > b {
+.no-js .collapsible-item > b,
+.slow-network .collapsible-item > b {
   padding-left: 0;
 }
 

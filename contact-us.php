@@ -1,6 +1,7 @@
 <?php
 require_once("includes/functions.php");
 register_client_hints();
+$network_quality = network_quality();
 ?>
 <!DOCTYPE html>
 <html class="no-js">
@@ -9,8 +10,14 @@ register_client_hints();
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300,900" type="text/css">
+    <?php
+    if ($network_quality > 0.5) {
+      ?>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300,900" type="text/css">
+      <?php
+    }
+    ?>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script>document.documentElement.classList.remove("no-js")</script>
   </head>

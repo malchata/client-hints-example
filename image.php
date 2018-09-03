@@ -59,7 +59,7 @@ if ($clean["sizes"] === true && isset($capabilities["width"])) {
     }
 
     if ($capabilities["width"] >= $size && $capabilities["width"] < $nextSize) {
-      if ($sizeDistance > 0.5 && $network_quality > 0.6) {
+      if ($sizeDistance > 0.5 && $network_quality > 0.5) {
         $imageUrl .= "-" . $nextSize . "w";
       } else {
         $imageUrl .= "-" . $size . "w";

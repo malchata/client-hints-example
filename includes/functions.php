@@ -1,7 +1,7 @@
 <?php
 
 function register_client_hints() {
-  header("Accept-CH: DPR, Content-DPR, Width, Viewport-Width, RTT, ECT, Downlink, Device-Memory");
+  header("Accept-CH: DPR, Width, Viewport-Width, RTT, ECT, Downlink");
   header("Accept-CH-Lifetime: 86400");
 }
 

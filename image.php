@@ -1,8 +1,6 @@
 <?php
 require_once("includes/functions.php");
 
-/*** Image selection logic begins here ***/
-
 $network_quality = network_quality();
 $imageUrl = realpath("/var/www/sconnie-timber/img/");
 $mime_map = array(
@@ -49,24 +47,31 @@ $clean["sizes"] = isset($_GET["sizes"]) && (bool)$_GET["sizes"] === true ? true 
 $imageUrl .= "/" . $clean["src"];
 
 if ($clean["sizes"] === true && isset($capabilities["width"])) {
+  $selectedSize = 0;
+
   foreach ($sizes as $key => $size) {
     $nextSize = $sizes[$key + 1];
     $sizeDistance = ($capabilities["width"] - ($nextSize - $size)) / ($nextSize - $size);
 
     if (($key + 1) === count($sizes)) {
       $imageUrl .= "-" . $size . "w";
+      $selectedSize = $size;
       break;
     }
 
     if ($capabilities["width"] >= $size && $capabilities["width"] < $nextSize) {
       if ($sizeDistance > 0.5 && $network_quality > 0.5) {
         $imageUrl .= "-" . $nextSize . "w";
+        $selectedSize = $nextSize;
       } else {
         $imageUrl .= "-" . $size . "w";
+        $selectedSize = $size;
       }
       break;
     }
   }
+
+  header("Content-DPR: " . round($selectedSize / ($capabilities["width"] / $capabilities["dpr"]), 2));
 } elseif ($clean["sizes"] === true && !isset($capabilities["width"])) {
   // A better approach here might be to set a cookie containing a value for the
   // viewport width for clients that don't support client hints. This is all
@@ -93,5 +98,4 @@ if (file_exists($imageUrl) === true) {
   http_response_code(404);
 }
 
-/*** Image selection logic ends here ***/
 ?>
